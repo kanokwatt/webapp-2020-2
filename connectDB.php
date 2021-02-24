@@ -1,18 +1,20 @@
 <?php
+//===========================
 // connectDB.php
-//**************************************************************
-// 1. CONNECT DATABASE
-//**************************************************************
-    $servername = "localhost";  // ชื่อของ Database Server
-    $username = "root";         // ชื่อผู้ที่มีสิทธิใช้งาน Database
-    $password = "";             // รหัสผ่านของผู้ที่มีสิทธิใช้งาน Database
-    $dbname = "mydb";           // ชื่อของฐานข้อมูล
+//===========================
+// 1. Connect (Database)
+//===========================
+    $servername = "localhost";  // ระบุชื่อของ Database Server
+    $username = "root";         // ระบุชื่อ Database Admin / Users
+    $password = "";             // ระบุรหัสผ่าน Database (Default: ค่าว่าง)
+    $dbname = "mydb";           // ระบุชื่อ Database
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
     // Check connection
     if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
     }
+
 ?>
