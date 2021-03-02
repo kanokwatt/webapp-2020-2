@@ -1,5 +1,5 @@
 <?php
-// updateSize.php
+// InsertSize.php
 
     $size_id = $_REQUEST["size_id"];
     $size_detail = $_REQUEST["size_detail"];
